@@ -934,7 +934,7 @@ body {
     width: 760px;
     .modal_main {
         overflow-y: scroll;
-        height: 90vh;
+        height: 95vh;
         overflow-x: hidden;
     }
     .modal_title {
@@ -984,8 +984,9 @@ body {
         z-index: 99;
         width: 95%;
         box-sizing: border-box;
-        height: 80%;
-        top: 60px;
+        height: 87vh;
+        overflow-y: scroll;
+        top: 50px;
         left: 15px;
         background: #fff;
         padding: 10px;
@@ -1013,6 +1014,22 @@ body {
                 top: 1px;
             }
         }
+        .graphik_box_title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            a {
+                height: 20px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p {
+                font: bold 1rem "PT Sans", sans-serif;
+            }
+        }
         .details_table_wrap {
             max-width: 420px;
             margin: 0 auto;
@@ -1033,17 +1050,27 @@ body {
                 padding: 10px;
                 background: #F5F8FE;
                 .details_panel_container {
-                    max-width: 340px;
+                    max-width: 300px;
                     margin: 0 auto;
                     display: grid;
                     grid-template-columns: 2fr 2fr 1fr;
                     grid-gap: 5px;
+                    .detail_box:nth-child(1){
+                        .cutom_radio_wrap {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .custom_radio_1 {
+                            margin-bottom: 5px;
+                        }
+                    }
                     .cutom_radio_wrap {
                         padding: 10px;
                         background: #fff;
                         display: grid;
                         grid-template-columns: 1fr;
                         grid-gap: 5px;
+                        height: 73%;
                         .custom_radio_1 {
                             display: flex;
                             align-items: center;
@@ -1090,6 +1117,7 @@ body {
                             border-radius: 4px 4px 0px 0px;
                             display: flex;
                             align-items: center;
+                            padding: 3px 0;
                             justify-content: center;
                             font: bold 1rem "PT Sans", sans-serif;
                         }
@@ -1228,7 +1256,7 @@ body {
         display: grid;
         grid-template-columns: 270px 2fr;
         grid-gap: 20px;
-        padding: 20px;
+        padding: 20px 20px 5px 20px;
         .status_accident_box {
             margin-bottom: 15px;
             .accident_title {
@@ -1334,6 +1362,15 @@ body {
                     border-radius: 4px;
                     text-decoration: none;
                     transition: .3s;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 57px;
+                        position: absolute;
+                        display: block;
+                        bottom: 2px;
+                        border: .1px dashed #D6D6D6;
+                    }
                     &:hover {
                         background: #AADCFB;
                         color: #000;
@@ -1382,7 +1419,7 @@ body {
                 }
                 .error {
                     &::after {
-                        content: url(../img/error.svg);
+                        content: url(../img/complex/error.svg);
                         position: absolute;
                         left: 3px;
                         top: 3px;
@@ -1390,7 +1427,7 @@ body {
                 }
                 .warning {
                     &::after {
-                        content: url(../img/warning.svg);
+                        content: url(../img/complex/warning.svg);
                         position: absolute;
                         left: 3px;
                         top: 2px;
@@ -1460,7 +1497,9 @@ body {
             .rubeg {
                 color: #0C56B5;
             }
-            .ohag,
+            .ohag {
+                color: #D14609;
+            }
             .dtp {
                 color: #D10C16;
             }
@@ -1604,7 +1643,7 @@ body {
             }
             .cart_week {
                 color: #EE2C41;
-                font: normal .75rem "PT Sans", sans-serif;
+                font: normal .7rem "PT Sans", sans-serif;
                 margin-bottom: 15px;
             }
             .cart_location {
@@ -1641,23 +1680,42 @@ body {
                 }
             }
             .cart_watch {
-                padding: 5px 20px;
+                padding: 5px 25px;
                 display: flex;
                 font: normal .75rem "PT Sans", sans-serif;
                 align-items: center;
                 justify-content: center;
                 background: #FDFDFD;
-                border: 1px solid #D6D6D6;
+                border: 1px solid #aadcfb;
                 box-sizing: border-box;
                 border-radius: 4px;
-                color: #D6D6D6;
-                width: 100px;
+                color: #797979;
+                width: 120px;
                 margin: 0 auto;
                 transition: .3s;
                 margin-bottom: 15px;
+                text-decoration: none;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 57px;
+                    position: absolute;
+                    display: block;
+                    bottom: 3px;
+                    border: .1px dashed #D6D6D6;
+                }
                 &:hover {
                     color: #000;
                     background: #D6D6D6;
+                }
+            }
+            .reload {
+                &::after {
+                    display: none;
+                }
+                img {
+                    position: relative;
+                    left: -4px;
                 }
             }
         }
@@ -1743,10 +1801,24 @@ body {
                 color: #000;
             }
         }
+        .exploitation_box {
+            .light:nth-child(2){
+                span {
+                    text-transform: uppercase;
+                }
+            }
+            .light:last-child{
+                color: #424242;
+                span {
+                    font-weight: 600;
+                    color: #424242;
+                }
+            }
+        }
         .model {
             color: #000;
             margin-bottom: 5px;
-            font: normal .7rem "PT Sans", sans-serif;
+            font: normal .75rem "PT Sans", sans-serif;
             span {
                 font-weight: bold;
             }
@@ -1815,13 +1887,29 @@ body {
             color: #424242;
             background: transparent;
             border: 1px solid #0C56B5;
-            text-decoration: underline;
+            position: relative;
+            &::before {
+                content: '';
+                width: 70px;
+                position: absolute;
+                display: block;
+                bottom: 3px;
+                border: .1px dashed #D6D6D6;
+            }
         }
         .disabled {
             color: #8d8d8d;
             background: transparent;
             border: 1px solid #8d8d8d;
-            text-decoration: underline;
+            position: relative;
+            &::before {
+                content: '';
+                width: 70px;
+                position: absolute;
+                display: block;
+                bottom: 3px;
+                border: .1px dashed #D6D6D6;
+            }
         }
     }
     .batalion_complex_wrap_rubew {

@@ -908,7 +908,7 @@ body {
   width: 760px; }
   .modal_complex .modal_main {
     overflow-y: scroll;
-    height: 90vh;
+    height: 95vh;
     overflow-x: hidden; }
   .modal_complex .modal_title {
     padding: 15px 20px;
@@ -962,8 +962,9 @@ body {
     width: 95%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 80%;
-    top: 60px;
+    height: 87vh;
+    overflow-y: scroll;
+    top: 50px;
     left: 15px;
     background: #fff;
     padding: 10px;
@@ -989,6 +990,37 @@ body {
         position: relative;
         left: -1px;
         top: 1px; }
+    .modal_complex .details_modal_wrap .graphik_box_title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 20px; }
+      .modal_complex .details_modal_wrap .graphik_box_title a {
+        height: 20px;
+        width: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .modal_complex .details_modal_wrap .graphik_box_title p {
+        font: bold 1rem "PT Sans", sans-serif; }
     .modal_complex .details_modal_wrap .details_table_wrap {
       max-width: 420px;
       margin: 0 auto;
@@ -1008,17 +1040,30 @@ body {
         padding: 10px;
         background: #F5F8FE; }
         .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container {
-          max-width: 340px;
+          max-width: 300px;
           margin: 0 auto;
           display: grid;
           grid-template-columns: 2fr 2fr 1fr;
           grid-gap: 5px; }
+          .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container .detail_box:nth-child(1) .cutom_radio_wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container .detail_box:nth-child(1) .custom_radio_1 {
+            margin-bottom: 5px; }
           .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container .cutom_radio_wrap {
             padding: 10px;
             background: #fff;
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 5px; }
+            grid-gap: 5px;
+            height: 73%; }
             .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container .cutom_radio_wrap .custom_radio_1 {
               display: -webkit-box;
               display: -webkit-flex;
@@ -1080,6 +1125,7 @@ body {
             -webkit-align-items: center;
                 -ms-flex-align: center;
                     align-items: center;
+            padding: 3px 0;
             -webkit-box-pack: center;
             -webkit-justify-content: center;
                 -ms-flex-pack: center;
@@ -1230,7 +1276,7 @@ body {
     display: grid;
     grid-template-columns: 270px 2fr;
     grid-gap: 20px;
-    padding: 20px; }
+    padding: 20px 20px 5px 20px; }
     .modal_complex .status_complex_wrap .status_accident_box {
       margin-bottom: 15px; }
       .modal_complex .status_complex_wrap .status_accident_box .accident_title {
@@ -1325,7 +1371,15 @@ body {
         text-decoration: none;
         -webkit-transition: .3s;
         -o-transition: .3s;
-        transition: .3s; }
+        transition: .3s;
+        position: relative; }
+        .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .details::after {
+          content: '';
+          width: 57px;
+          position: absolute;
+          display: block;
+          bottom: 2px;
+          border: .1px dashed #D6D6D6; }
         .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .details:hover {
           background: #AADCFB;
           color: #000; }
@@ -1364,12 +1418,12 @@ body {
           left: 3px;
           top: 3px; }
         .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box .error::after {
-          content: url(../img/error.svg);
+          content: url(../img/complex/error.svg);
           position: absolute;
           left: 3px;
           top: 3px; }
         .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box .warning::after {
-          content: url(../img/warning.svg);
+          content: url(../img/complex/warning.svg);
           position: absolute;
           left: 3px;
           top: 2px; }
@@ -1438,7 +1492,8 @@ body {
         font: bold .9rem "PT Sans", sans-serif; }
       .modal_complex .status_complex_wrap .status_box_coll .rubeg {
         color: #0C56B5; }
-      .modal_complex .status_complex_wrap .status_box_coll .ohag,
+      .modal_complex .status_complex_wrap .status_box_coll .ohag {
+        color: #D14609; }
       .modal_complex .status_complex_wrap .status_box_coll .dtp {
         color: #D10C16; }
   .modal_complex .complex_cart_wrap {
@@ -1609,7 +1664,7 @@ body {
         font: bold .75rem "PT Sans", sans-serif; }
       .modal_complex .complex_cart_wrap .cart_info .cart_week {
         color: #EE2C41;
-        font: normal .75rem "PT Sans", sans-serif;
+        font: normal .7rem "PT Sans", sans-serif;
         margin-bottom: 15px; }
       .modal_complex .complex_cart_wrap .cart_info .cart_location {
         font: bold .87rem "PT Sans", sans-serif;
@@ -1637,7 +1692,7 @@ body {
         .modal_complex .complex_cart_wrap .nonde_add_box .cart_piketaw span {
           font-weight: bold; }
       .modal_complex .complex_cart_wrap .nonde_add_box .cart_watch {
-        padding: 5px 20px;
+        padding: 5px 25px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1652,20 +1707,34 @@ body {
             -ms-flex-pack: center;
                 justify-content: center;
         background: #FDFDFD;
-        border: 1px solid #D6D6D6;
+        border: 1px solid #aadcfb;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         border-radius: 4px;
-        color: #D6D6D6;
-        width: 100px;
+        color: #797979;
+        width: 120px;
         margin: 0 auto;
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        text-decoration: none;
+        position: relative; }
+        .modal_complex .complex_cart_wrap .nonde_add_box .cart_watch::after {
+          content: '';
+          width: 57px;
+          position: absolute;
+          display: block;
+          bottom: 3px;
+          border: .1px dashed #D6D6D6; }
         .modal_complex .complex_cart_wrap .nonde_add_box .cart_watch:hover {
           color: #000;
           background: #D6D6D6; }
+      .modal_complex .complex_cart_wrap .nonde_add_box .reload::after {
+        display: none; }
+      .modal_complex .complex_cart_wrap .nonde_add_box .reload img {
+        position: relative;
+        left: -4px; }
   .modal_complex .worktime_complex_wrap {
     padding: 10px 20px;
     max-width: 500px;
@@ -1727,10 +1796,17 @@ body {
       margin-bottom: 5px; }
       .modal_complex .batalion_complex_wrap .light span {
         color: #000; }
+    .modal_complex .batalion_complex_wrap .exploitation_box .light:nth-child(2) span {
+      text-transform: uppercase; }
+    .modal_complex .batalion_complex_wrap .exploitation_box .light:last-child {
+      color: #424242; }
+      .modal_complex .batalion_complex_wrap .exploitation_box .light:last-child span {
+        font-weight: 600;
+        color: #424242; }
     .modal_complex .batalion_complex_wrap .model {
       color: #000;
       margin-bottom: 5px;
-      font: normal .7rem "PT Sans", sans-serif; }
+      font: normal .75rem "PT Sans", sans-serif; }
       .modal_complex .batalion_complex_wrap .model span {
         font-weight: bold; }
     .modal_complex .batalion_complex_wrap .strong {
@@ -1810,12 +1886,26 @@ body {
       color: #424242;
       background: transparent;
       border: 1px solid #0C56B5;
-      text-decoration: underline; }
+      position: relative; }
+      .modal_complex .rubew_arhive .medium::before {
+        content: '';
+        width: 70px;
+        position: absolute;
+        display: block;
+        bottom: 3px;
+        border: .1px dashed #D6D6D6; }
     .modal_complex .rubew_arhive .disabled {
       color: #8d8d8d;
       background: transparent;
       border: 1px solid #8d8d8d;
-      text-decoration: underline; }
+      position: relative; }
+      .modal_complex .rubew_arhive .disabled::before {
+        content: '';
+        width: 70px;
+        position: absolute;
+        display: block;
+        bottom: 3px;
+        border: .1px dashed #D6D6D6; }
   .modal_complex .batalion_complex_wrap_rubew {
     max-width: 100%;
     display: grid;
