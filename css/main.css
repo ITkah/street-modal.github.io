@@ -1758,16 +1758,18 @@ body {
       font: normal 1rem "PT Sans", sans-serif;
       padding-left: 5px;
       margin-bottom: 10px; }
-    .modal_complex .worktime_complex_wrap .stages_box .success {
+    .modal_complex .worktime_complex_wrap .stages_box .stages_text {
       border-left: 6px solid #499C6C; }
-    .modal_complex .worktime_complex_wrap .stages_box .error {
-      border-left: 6px solid #EE2C41; }
     .modal_complex .worktime_complex_wrap .stages_box .stages_data {
       font: normal 1rem "PT Sans", sans-serif;
       color: #0C56B5; }
       .modal_complex .worktime_complex_wrap .stages_box .stages_data span {
         color: #424242;
         font-weight: bold; }
+  .modal_complex .error {
+    border: 1px solid #D10C16; }
+    .modal_complex .error .stages_box .stages_text {
+      border-left: 6px solid #D10C16; }
   .modal_complex .batalion_complex_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;

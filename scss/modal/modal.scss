@@ -1750,11 +1750,8 @@ body {
                 padding-left: 5px;
                 margin-bottom: 10px;
             }
-            .success {
+            .stages_text {
                 border-left: 6px solid #499C6C;
-            }
-            .error {
-                border-left: 6px solid #EE2C41;
             }
             .stages_data {
                 font: normal 1rem "PT Sans", sans-serif;
@@ -1763,6 +1760,14 @@ body {
                     color: #424242;
                     font-weight: bold;
                 }
+            }
+        }
+    }
+    .error {
+        border: 1px solid #D10C16;
+        .stages_box {
+            .stages_text {
+                border-left: 6px solid #D10C16;
             }
         }
     }
