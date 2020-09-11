@@ -1676,7 +1676,21 @@ body {
         color: #424242;
         margin-bottom: 15px; }
     .modal_complex .complex_cart_wrap .nonde_add_box {
-      padding: 0 10px; }
+      padding: 0 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      min-height: 120px; }
       .modal_complex .complex_cart_wrap .nonde_add_box .cart_title {
         text-align: center;
         color: #424242;
@@ -1744,6 +1758,7 @@ body {
     padding: 10px 20px;
     max-width: 500px;
     margin: 0 auto;
+    margin-top: 15px;
     margin-bottom: 20px;
     background: #F5F8FE;
     border: 1px solid rgba(73, 156, 108, 0.6);
@@ -1771,10 +1786,41 @@ body {
       .modal_complex .worktime_complex_wrap .stages_box .stages_data span {
         color: #424242;
         font-weight: bold; }
-  .modal_complex .error {
+  .modal_complex .control_sm_container {
+    padding: 10px;
+    background: #F5F8FE;
+    border-radius: 4px;
+    max-height: 120px;
+    border: 1px solid rgba(73, 156, 108, 0.6); }
+    .modal_complex .control_sm_container .worktime_box p {
+      font: normal 1rem "PT Sans", sans-serif;
+      margin-bottom: 2px; }
+      .modal_complex .control_sm_container .worktime_box p span {
+        font-weight: bold; }
+    .modal_complex .control_sm_container .worktime_box p:last-child {
+      color: #424242;
+      margin: 0 0 10px 0; }
+    .modal_complex .control_sm_container .stages_box .stages_text {
+      font: normal 1rem "PT Sans", sans-serif;
+      padding-left: 5px;
+      margin-bottom: 10px; }
+    .modal_complex .control_sm_container .stages_box .stages_text {
+      border-left: 6px solid #499C6C; }
+    .modal_complex .control_sm_container .stages_box .stages_data {
+      font: normal 1rem "PT Sans", sans-serif;
+      color: #0C56B5;
+      margin-bottom: 25px; }
+      .modal_complex .control_sm_container .stages_box .stages_data span {
+        color: #424242;
+        font-weight: bold; }
+  .modal_complex .error_control {
     border: 1px solid #D10C16; }
-    .modal_complex .error .stages_box .stages_text {
+    .modal_complex .error_control .stages_box .stages_text {
       border-left: 6px solid #D10C16; }
+  .modal_complex .empty_control {
+    border: 1px solid #D14609; }
+    .modal_complex .empty_control .stages_box .stages_text {
+      border-left: 6px solid #D14609; }
   .modal_complex .batalion_complex_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
