@@ -675,7 +675,8 @@ body {
             font: bold 1rem "PT Sans", sans-serif;
         }
         .event_death {
-            margin-right: 40px;
+            margin-right: 10px;
+            color: #424242;
         }
         .modal_main_info {
             .modal_main_title {
@@ -718,6 +719,7 @@ body {
             font: normal 0.87rem "PT Sans", sans-serif;
             .data_num {
                 font-weight: bold;
+                color: #424242;
             }
         }
         ul {
@@ -780,7 +782,7 @@ body {
         .modal_hearth_status {
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 10px;
+            grid-gap: 5px;
             .hearth_event_box {
                 display: flex;
                 align-items: center;
@@ -794,6 +796,9 @@ body {
                 .event_type {
                     font: bold 1rem "PT Sans", sans-serif;
                     color: #d14609;
+                }
+                .simple {
+                    color: #000;
                 }
             }
             .hearth_event_victims {
@@ -812,6 +817,7 @@ body {
             .hearth_event_wether {
                 .event_wether {
                     color: #797979;
+                    margin-bottom: 10px;
                     font: bold 0.87rem "PT Sans", sans-serif;
                 }
             }
@@ -819,7 +825,7 @@ body {
         .modal_hearth_info {
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 10px;
+            grid-gap: 5px;
             .hearth_info_gps {
                 display: flex;
                 .info_gps_input {
@@ -889,7 +895,7 @@ body {
                 .type_num_text,
                 .type_num_status {
                     font: 400 0.87rem "PT Sans", sans-serif;
-                    color: #000;
+                    color: #797979;
                 }
             }
             .hearth_type_dtp {

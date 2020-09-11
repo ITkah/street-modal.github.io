@@ -652,7 +652,8 @@ body {
       color: #000;
       font: bold 1rem "PT Sans", sans-serif; }
     .modal_hearth_container .modal_hearth_main .event_death {
-      margin-right: 40px; }
+      margin-right: 10px;
+      color: #424242; }
     .modal_hearth_container .modal_hearth_main .modal_main_info .modal_main_title {
       font: bold 1rem "PT Sans", sans-serif;
       margin-bottom: 10px;
@@ -695,7 +696,8 @@ body {
       color: #424242;
       font: normal 0.87rem "PT Sans", sans-serif; }
       .modal_hearth_container .hearth_activity .data_activity .data_num {
-        font-weight: bold; }
+        font-weight: bold;
+        color: #424242; }
     .modal_hearth_container .hearth_activity ul li {
       color: #407ed2;
       font: bold 0.87rem "PT Sans", sans-serif;
@@ -756,7 +758,7 @@ body {
     .modal_hearth_container .modal_hearth_wrap .modal_hearth_status {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 10px; }
+      grid-gap: 5px; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_status .hearth_event_box {
         display: -webkit-box;
         display: -webkit-flex;
@@ -778,6 +780,8 @@ body {
         .modal_hearth_container .modal_hearth_wrap .modal_hearth_status .hearth_event_box .event_type {
           font: bold 1rem "PT Sans", sans-serif;
           color: #d14609; }
+        .modal_hearth_container .modal_hearth_wrap .modal_hearth_status .hearth_event_box .simple {
+          color: #000; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_status .hearth_event_victims {
         display: -webkit-box;
         display: -webkit-flex;
@@ -799,11 +803,12 @@ body {
           margin-right: 40px; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_status .hearth_event_wether .event_wether {
         color: #797979;
+        margin-bottom: 10px;
         font: bold 0.87rem "PT Sans", sans-serif; }
     .modal_hearth_container .modal_hearth_wrap .modal_hearth_info {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 10px; }
+      grid-gap: 5px; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps {
         display: -webkit-box;
         display: -webkit-flex;
@@ -870,7 +875,7 @@ body {
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_type .hearth_type_num .type_num_text,
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_type .hearth_type_num .type_num_status {
         font: 400 0.87rem "PT Sans", sans-serif;
-        color: #000; }
+        color: #797979; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_type .hearth_type_dtp {
         display: -webkit-box;
         display: -webkit-flex;
