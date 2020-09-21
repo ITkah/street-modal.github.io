@@ -9,453 +9,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/dropzone.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="wrapper">
         <main>
-            <div class="modal modal_complex active_modal">
-                <div class="modal_main">
-                    <div class="modal_container_complex">
-                        <div class="modal_title">
-                            <p class="back_slider">
-                                <img src="img/complex/left.svg" alt="left"> Назад
-                            </p>
-                            <p class="modal_title_text">
-                                Комплекс: <span class="modal_title_type">AS123414</span>
-                            </p>
-                            <img src="img/close.svg" class="close_modal" alt="close_modal">
-                        </div>
+            <div class="modal modal_dtp active_modal">
+                <div class="modal_container_dtp">
+                    <div class="modal_title">
+                        <p class="modal_title_text">
+                            №233411: <span class="modal_title_type">Наезд на пешехода</span>
+                        </p>
+                        <p class="modal_title_data">05 июля 2020 в 18:53, Воскресенье</p>
+                        <img src="img/close.svg" class="close_modal" alt="close_modal">
                     </div>
-                    <div class="status_complex_wrap">
-                        <div class="status_box_wrap">
-                            <div class="status_accident_box">
-                                <p><span class="accident_title">Аварийность:</span><span class="accident_status down">падает</span></p>
-                                <p><span class="accident_title">Аварийность:</span><span class="accident_status up">растет</span></p>
-                                <p><span class="accident_title">Аварийность:</span><span class="accident_status">неизвестно</span></p>
-                            </div>
-                            <div class="status_violation_box">
-                                <p class="status_violation_renewal">
-                                    Обновлено:<span> 13:00</span>
-                                </p>
-                                <div class="status_violation_today violation red">
-                                    <p><span>+133</span> Нарушений сегодня</p>
-                                </div>
-                                <div class="status_violation_today violation green">
-                                    <p><span>+133</span> Нарушений сегодня</p>
-                                </div>
-                                <div class="status_violation_today violation yellow">
-                                    <p><span>+133</span> Нарушений сегодня</p>
-                                </div>
-                                <div class="status_yesterday_today violation gray">
-                                    <p>Нет нарушений</p>
-                                </div>
-                                <div class="status_rait_box">
-                                    <p class="plane">План: <span>155</span></p>
-                                    <p class="raite">Рейтинг: <span>390</span></p>
-                                    <a href="#" class="details">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="status_box_adress">
-                            <div class="status_adress_wrap">
-                                <p class="status_adress_title">С 20 мая 2020 по адресу</p>
-                                <p class="adress">97 км + 922, в МСК</p>
-                                <p class="road">Дорага: <span>M-9 "Балтия"</span></p>
-                                <p class="paketaw">Пикетаж: <span>97 км + 922 м</span></p>
-                                <div class="status_panel_box">
-                                    <div class="input_panel warning">
-                                        <input type="text" value="55.23142.234235" readonly>
-                                    </div>
-                                </div>
-                                <div class="status_panel_box">
-                                    <div class="input_panel error">
-                                        <input type="text" value="55.23142.234235" readonly>
-                                    </div>
-                                </div>
-                                <div class="status_panel_box">
-                                    <div class="input_panel ok">
-                                        <input type="text" value="55.23142.234235" readonly>
-                                    </div>
-                                    <a href="#" class="status_panel_btn file"></a>
-                                    <a href="#" class="status_panel_btn history"></a>
-                                    <a href="#" class="status_panel_btn edit"></a>
-                                </div>
-                            </div>
-                            <div class="status_box_coll">
-                                <p class="rubeg">Рубеж 2885</p>
-                                <p class="ohag">Очаг 2885</p>
-                                <p class="dtp">ДТП 2452</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details_modal_wrap">
-                        <img src="img/close.svg" class="close_details" alt="close">
-                        <a href="#" download="" class="download"><img src="img/download.svg" alt="down">Экспорт</a>
-                        <div class="details_table_wrap">
-                            <div class="details_table_title">
-                                <p>1 мая - 1 июня 2020</p>
-                            </div>
-                            <div class="details_panel_wrap">
-                                <div class="details_panel_container">
-                                    <div class="detail_box">
-                                        <p class="detail_box_title">Тип</p>
-                                        <div class="cutom_radio_wrap">
-                                            <div class="custom_radio_1">
-                                                <input class="custom-radio" name="type" id="naruwenia" type="radio">
-                                                <label for="naruwenia">Нарушения</label>
+                    <div class="tabs">
+
+                        <ul class="tabs__caption">
+                            <li class="active">Обзор</li>
+                            <li>Фото места ДТП</li>
+                            <li>Фото окрестностей</li>
+                        </ul>
+
+                        <div class="tabs__content active">
+                            <div class="review_dtp_wrap">
+                                <div class="review_box_police">
+                                    <div class="review_id_dtp">
+                                        <div class="review_id_dtp_wrap">
+                                            <div class="review_id_input warning">
+                                                <input type="text" value="53.196121, 50.107123" disabled>
                                             </div>
-                                            <div class="custom_radio_1">
-                                                <input class="custom-radio" name="type" id="proezd" type="radio">
-                                                <label for="proezd">Проезд</label>
-                                            </div>
-                                            <div class="custom_radio_1">
-                                                <input class="custom-radio" name="type" id="dtp" type="radio">
-                                                <label for="dtp">ДТП</label>
-                                            </div>
+                                            <span class="id_change">
+                                                Изменить
+                                            </span>
                                         </div>
-                                    </div>
-                                    <div class="detail_box">
-                                        <p class="detail_box_title">Тип</p>
-                                        <div class="cutom_radio_wrap">
-                                            <div class="custom_radio_2">
-                                                <input class="custom-radio" name="period" id="nedela" type="radio">
-                                                <label for="nedela">за неделю</label>
+                                        <div class="review_id_dtp_wrap">
+                                            <div class="review_id_input error">
+                                                <input type="text" value="53.196121, 50.107123" disabled>
                                             </div>
-                                            <div class="custom_radio_2">
-                                                <input class="custom-radio" name="period" id="2nedela" type="radio">
-                                                <label for="2nedela">за 2 недели</label>
-                                            </div>
-                                            <div class="custom_radio_2">
-                                                <input class="custom-radio" name="period" id="mesac" type="radio">
-                                                <label for="mesac">за месяц</label>
-                                            </div>
-                                            <div class="custom_radio_2">
-                                                <input class="custom-radio" name="period" id="mesac3" type="radio">
-                                                <label for="mesac3">за 3 месяца</label>
-                                            </div>
+                                            <span class="id_change">
+                                                Изменить
+                                            </span>
                                         </div>
-                                    </div>
-                                    <div class="detail_box_status up">
-                                        Рост
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="details_info_wrap">
-                                <div class="details_info_box">
-                                    <p class="title_xl_details">Проезды</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                                <div class="details_info_box">
-                                    <p class="title_xl_details red">Нарушения</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                                <div class="details_info_box">
-                                    <p class="title_xl_details red">ДТП</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                                <div class="details_info_box">
-                                    <p class="title_sm_details">Сегодня</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                                <div class="details_info_box">
-                                    <p class="title_sm_details">Сегодня</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                                <div class="details_info_box">
-                                    <p class="title_sm_details">Сегодня</p>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                    <div class="details_box_sm">
-                                        <p>Сегодня</p>
-                                        <p>+475</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="details_graphik_wrap">
-                                <div class="graphik_box_title">
-                                    <a href="#">
-                                        <img src="img/complex/left_gr.svg" alt="icon">
-                                    </a>
-                                    <p class="graphik_title">Июль 2020</p>
-                                    <a href="#">
-                                        <img src="img/complex/right_gr.svg" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="complex_slider_wrap">
-                        <div class="slider_tab">
-                            <div class="slider slider-nav">
-                                <div>
-                                    <img src="img/car.png" alt="slider">
-                                </div>
-                                <div>
-                                    <img src="img/car.png" alt="slider">
-                                </div>
-                                <div>
-                                    <img src="img/car.png" alt="slider">
-                                </div>
-                                <div>
-                                    <img src="img/car.png" alt="slider">
-                                </div>
-                                <div>
-                                    <img src="img/car.png" alt="slider">
-                                </div>
-                            </div>
-                            <div class="slider_wrap">
-                                <div class="slider_control">
-                                    <div class="slider_control_box">
-                                        <p class="slider_left dtp_left">
-                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9 16.5L1.5 9L9 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                        <div class="review_id_dtp_wrap">
+                                            <div class="review_id_input ok">
+                                                <input type="text" value="53.196121, 50.107123" disabled>
+                                            </div>
+                                            <span class="id_change">
+                                                Изменить
+                                            </span>
+                                        </div>
+                                        <p class="street">Московская обл.</p>
+                                        <p class="info_dtp blue">
+                                            <span>Дорога:</span> M-7 Волга
                                         </p>
-                                        <div class="counter"></div>
-                                        <p class="slider_right dtp_right">
-                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 16.5L8.5 9L1 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                        <p class="info_dtp">
+                                            <span>Пикетаж:</span> +476 м
                                         </p>
                                     </div>
+                                    <div class="review_route_dtp">
+                                        <div class="review_zone_box">
+                                            <p class="review_zone_about">id трассы: 46К-0321</p>
+                                            <p class="review_zone_about">Центральный район</p>
+                                            <p class="review_zone_about strong">УТС-Север</p>
+                                            <p class="review_zone_text zone_done">
+                                                <span>КВФ CS300414134446</span>, в зоне доступа
+                                            </p>
+                                            <p class="review_zone_text zone_error">
+                                                <span>КВФ CS300414134446</span>, в зоне доступа
+                                            </p>
+                                            <p class="review_zone_text zone_warning">
+                                                <span>КВФ CS300414134446</span>, в зоне доступа
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review_batalion_dtp">
+                                        <p class="batalion_dtp_title">Батальон</p>
+                                        <p class="batalion_dtp_text">1-й Спецполк. Северный ДПС Гибдд ГУВД Мо. 3-й СПЕЦБАТАЛЬОН.</p>
+                                        <p class="batalion_dtp_text strong">1-й Спецполк. Северный ДПС Гибдд ГУВД Мо. 3-й СПЕЦБАТАЛЬОН.</p>
+                                        <p class="batalion_dtp_phone">Дежурная часть:<a href="tel:+74956778893">+7-495-677-88-93</a></p>
+                                    </div>
+                                    <div class="review_dtp_event">
+                                        <div class="review_dtp_event_title">
+                                            <p class="dtp_event_title">Мероприятия</p>
+                                            <span class="change">Изменить</span>
+                                        </div>
+                                        <ul>
+                                            <li>Комплексное обследование дороги</li>
+                                        </ul>
+                                        <p class="dtp_event_data">
+                                            <span>Дата реализации:</span> 13 июля 2020
+                                        </p>
+                                    </div>
+                                    <div class="review_dtp_info">
+                                        <a href="#" class="link_dtp">Все ДТП по этому адресу</a>
+                                        <a href="#" class="link_dtp">ДТП рядом в этот день</a>
+                                        <a href="#" class="link_dtp">Яндекс Панорамы →</a>
+                                    </div>
                                 </div>
-                                <div class="slider slider-for">
-                                    <div>
-                                        <img src="img/car.png" alt="slider">
+                                <div class="review_box_wrap">
+                                    <div class="review_about_dtp">
+                                        <div class="review_death_coll">
+                                            <p>Погибло: 1</p>
+                                            <p>Ранено: 1</p>
+                                        </div>
+                                        <p class="review_death_person">
+                                            <span>Погибший:</span> <strong>водитель</strong>, мужчина
+                                        </p>
+                                        <p class="review_death_person">
+                                            <span>Пострадавший:</span> <strong>водитель</strong>, мужчина
+                                        </p>
+                                        <p class="review_factor">
+                                            <span>Фактор:</span> погода
+                                        </p>
                                     </div>
-                                    <div>
-                                        <img src="img/car.png" alt="slider">
+                                    <div class="review_violations_box">
+                                        <p class="review_violations_title">Нарушения:</p>
+                                        <ol>
+                                            <li>Водитель не справился с управлением</li>
+                                            <li>Водитель не справился с управлением</li>
+                                        </ol>
                                     </div>
-                                    <div>
-                                        <img src="img/car.png" alt="slider">
+                                    <div class="review_participants_box">
+                                        <p class="review_participants_title">Участники:</p>
+                                        <ol>
+                                            <li>
+                                                <strong>Водитель,</strong> мужчина
+                                                <p class="review_participants_violations">Другие нарушения ПДД водителем</p>
+                                            </li>
+                                            <li>
+                                                <strong>Водитель,</strong> мужчина
+                                                <p class="review_participants_about">Стаж: 5 лет, т/с: Chevrolet Lacetti 2012</p>
+                                                <p class="review_participants_violations">Другие нарушения ПДД водителем</p>
+                                            </li>
+                                        </ol>
                                     </div>
-                                    <div>
-                                        <img src="img/car.png" alt="slider">
-                                    </div>
-                                    <div>
-                                        <img src="img/car.png" alt="slider">
+                                    <div class="review_situation_box">
+                                        <p class="review_situation_title">Обстановка:</p>
+                                        <div class="review_situation_info">
+                                            <p class="review_situation_text">Условия</p>
+                                            <ul>
+                                                <li>Погода: <strong>пасмурно</strong></li>
+                                                <li>Погода: пасмурно</li>
+                                                <li>Погода: пасмурно</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="tabs__content">
+                            <div class="slider_tab">
+                                <div class="slider slider-nav">
+                                    <div>
+                                        <img src="img/car.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/car.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/car.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/car.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/car.png" alt="slider">
+                                    </div>
+                                </div>
+                                <div class="slider_wrap">
+                                    <div class="slider_control">
+                                        <div class="slider_control_box">
+                                            <p class="slider_left dtp_left">
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9 16.5L1.5 9L9 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                            </p>
+                                            <div class="counter"></div>
+                                            <p class="slider_right dtp_right">
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 16.5L8.5 9L1 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider slider-for">
+                                        <div>
+                                            <img src="img/car.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/car.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/car.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/car.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/car.png" alt="slider">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs__content">
+                            <div class="slider_tab">
+                                <div class="slider slider-nav-2">
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                    <div>
+                                        <img src="img/forest.png" alt="slider">
+                                    </div>
+                                </div>
+                                <div class="slider_wrap">
+                                    <div class="slider_control">
+                                        <div class="slider_control_box">
+                                            <p class="slider_left zona_left">
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9 16.5L1.5 9L9 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                            </p>
+                                            <div class="counter"></div>
+                                            <p class="slider_right zona_right">
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 16.5L8.5 9L1 1.5" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider slider-for-2">
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                        <div>
+                                            <img src="img/forest.png" alt="slider">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="complex_basis_main">
-                        <div class="worktime_complex_wrap error_control">
-                            <div class="worktime_box">
-                                <p>Контроль: <span>На камеру</span></p>
-                                <p>Время работы: <span>22 дня</span></p>
+                    <div class="modal_dtp_coment_box">
+                        <div class="modal_coment_box">
+                            <div class="modal_coment_title">
+                                <p class="coment_title">Комментарий</p>
+                                <p class="coment_btn">Добавить</p>
+                                <p class="change">Редактировать</p>
                             </div>
-                            <div class="stages_box">
-                                <p class="stages_text">Не работает</p>
-                                <p class="stages_data">Этап: <strong>эксплуатация</strong> <span>с 22 мая 2020</span></p>
-                            </div>
+                            <input type="text" class="coment_input">
                         </div>
-                        <div class="worktime_complex_wrap empty_control">
-                            <div class="worktime_box">
-                                <p>Контроль: <span>На камеру</span></p>
-                                <p>Время работы: <span>22 дня</span></p>
-                            </div>
-                            <div class="stages_box">
-                                <p class="stages_text">Пропадает связь</p>
-                                <p class="stages_data">Этап: <strong>эксплуатация</strong> <span>с 22 мая 2020</span></p>
-                            </div>
-                        </div>
-                        <div class="worktime_complex_wrap">
-                            <div class="worktime_box">
-                                <p>Контроль: <span>На камеру</span></p>
-                                <p>Время работы: <span>22 дня</span></p>
-                            </div>
-                            <div class="stages_box">
-                                <p class="stages_text">Работает без ограничений</p>
-                                <p class="stages_data">Этап: <strong>эксплуатация</strong> <span>с 22 мая 2020</span></p>
-                            </div>
-                        </div>
-                        <div class="complex_cart_wrap">
-                            <div class="complex_cart_box">
-                                <div class="cart_img fixation">
-                                    <img src="img/complex/car.png" class="cart_photo" alt="car">
-                                    <a href="#" class="zoom_cart">
-                                        <img src="img/complex/zoom.svg" alt="zoom">
-                                    </a>
-                                </div>
-                                <div class="cart_info">
-                                    <p class="cart_title">Проезд</p>
-                                    <p class="cart_data">13 марта</p>
-                                    <p class="cart_week">более 2 недель</p>
-                                    <p class="cart_location">На складе</p>
-                                </div>
-                            </div>
-                            <div class="complex_cart_box">
-                                <div class="cart_img none_fixation">
-                                    <img src="img/complex/car.png" class="cart_photo" alt="car">
-                                    <a href="#" class="zoom_cart">
-                                        <img src="img/complex/zoom.svg" alt="zoom">
-                                    </a>
-                                </div>
-                                <div class="cart_info">
-                                    <p class="cart_title">Проезд</p>
-                                    <p class="cart_data">13 марта</p>
-                                    <p class="cart_week">более 2 недель</p>
-                                    <p class="cart_location">На складе</p>
-                                </div>
-                            </div>
-                            <div class="complex_cart_box">
-                                <div class="cart_img none_save">
-                                    <p>Фото не сохраннено</p>
-                                </div>
-                                <div class="cart_info">
-                                    <p class="cart_title">Проезд</p>
-                                    <p class="cart_data">13 марта</p>
-                                    <p class="cart_week">более 2 недель</p>
-                                    <p class="cart_location">На складе</p>
-                                </div>
-                            </div>
-                            <div class="complex_cart_box">
-                                <div class="cart_img none_add">
-                                    <p>Фото не добавлено</p>
-                                    <a href="#" class="add_photo">Добавить</a>
-                                </div>
-                                <div class="nonde_add_box">
-                                    <p class="cart_title">Место установки</p>
-                                    <p class="cart_street">Дорога: <span>A-106</span></p>
-                                    <p class="cart_piketaw">Пикетаж: <span>43 км</span></p>
-                                    <a href="#" class="cart_watch">Посмотреть</a>
-                                </div>
-                            </div>
-                            <div class="complex_cart_box">
-                                <div class="cart_img">
-                                    <img src="img/complex/Place 1.png" class="cart_photo" alt="place">
-                                </div>
-                                <div class="nonde_add_box">
-                                    <p class="cart_title">Место установки</p>
-                                    <p class="cart_road">Дорога: <span>A-106</span></p>
-                                    <p class="cart_piketaw">Пикетаж: <span>43 км</span></p>
-                                    <a href="#" class="cart_watch reload">
-                                        <img src="img/complex/reload.svg" alt="reload">
-                                        Обновить
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="complex_cart_box">
-                                <div class="cart_img">
-                                    <img src="img/complex/Place 1.png" class="cart_photo" alt="place">
-                                </div>
-                                <div class="nonde_add_box">
-                                    <p class="cart_title">Место установки</p>
-                                    <p class="cart_street">Дорога: <span>A-106</span></p>
-                                    <p class="cart_piketaw">Пикетаж: <span>43 км</span></p>
-                                    <a href="#" class="cart_watch">Посмотреть</a>
-                                </div>
-                            </div>
-                            <div class="complex_cart_empty">
-                                <img src="img/complex/empty.svg" alt="empty">
-                                <p>Муляж</p>
-                            </div>
-                        </div>
-                        <div class="complex_laws_wrap">
-                            <div class="complex_laws_box">
-                                <div class="laws_info">
-                                    <p>Разрешенная скорость:</p>
-                                    <div class="laws_img">
-                                        <img src="img/complex/laws/road.png" alt="road">
-                                    </div>
-                                </div>
-                                <p class="laws_watch">На камеру</p>
-                            </div>
-                            <div class="complex_laws_box">
-                                <div class="laws_info">
-                                    <p>Разрешенная скорость:</p>
-                                    <div class="laws_img">
-                                        <img src="img/complex/laws/road.png" alt="road">
-                                    </div>
-                                </div>
-                                <p class="laws_watch">На камеру</p>
-                            </div>
-                            <div class="complex_laws_box">
-                                <div class="laws_info">
-                                    <p>Разрешенная скорость:</p>
-                                    <div class="laws_img">
-                                        <img src="img/complex/laws/road.png" alt="road">
-                                    </div>
-                                </div>
-                                <p class="laws_watch">На камеру</p>
-                            </div>
-                            <div class="complex_laws_box">
-                                <div class="laws_info">
-                                    <p>Разрешенная скорость:</p>
-                                    <div class="laws_img_two">
-                                        <img src="img/complex/laws/pravila.png" alt="prava">
-                                        <img src="img/complex/laws/8.4.1 1.png" alt="car">
-                                    </div>
-                                </div>
-                                <p class="laws_watch">На камеру/от камеры</p>
-                            </div>
-                        </div>
-                        <div class="batalion_complex_wrap">
-                            <div class="batalion_box">
-                                <p class="batalion_title">Батальон</p>
-                                <p class="light">1-й спецвыпуск</p>
-                                <p class="strong">Ярославский ш2</p>
-                                <p class="number_degur">Дежурная часть +3123124152</p>
-                            </div>
-                            <div class="exploitation_box"> 
-                                <p class="batalion_title">Эксплуатируется <span>с 22 мая</span></p>
-                                <p class="light">Тип: <span>Стационарный</span></p>
-                                <p class="model">Модель: <span>Автоураган</span></p>
-                                <p class="light">Эксплуатируется: <span>УТС-Север</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="complex_add_photo">
-                        <img src="img/close.svg" class="close_add_photo" alt="close">
-                        <form id="upload_container" class="dropzone" enctype="multipart/form-data">
-                            <p class="title">Нет фото</p>
-                            <p class="output_fiel"></p>
-                            <div class="dz-default dz-message">
-                                <button class="dz-button" type="button">Добавить</button>
-                            </div>
-                            <span class="hint">или перетащите сюда</span>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -463,7 +295,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/dropzone.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 

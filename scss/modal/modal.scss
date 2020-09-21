@@ -27,8 +27,8 @@ body {
 
 .modal {
     position: fixed;
-    left: 20px;
-    top: 20px;
+    left: 25px;
+    top: 25px;
     max-width: 650px;
     width: 650px;
     background: #fff;
@@ -221,10 +221,11 @@ body {
         margin-bottom: 20px;
         .review_violations_title {
             color: #ee2c41;
-            margin-bottom: -10px;
+            margin-bottom: 0;
             font: bold 1rem "PT Sans", sans-serif;
         }
         ol {
+            margin: 5px 0;
             padding: 0 0 0 15px;
             width: 100%;
             box-sizing: border-box;
@@ -1061,7 +1062,7 @@ body {
                     display: grid;
                     grid-template-columns: 2fr 2fr 1fr;
                     grid-gap: 5px;
-                    .detail_box:nth-child(1){
+                    .detail_box:nth-child(1) {
                         .cutom_radio_wrap {
                             display: flex;
                             flex-direction: column;
@@ -1865,12 +1866,12 @@ body {
             }
         }
         .exploitation_box {
-            .light:nth-child(2){
+            .light:nth-child(2) {
                 span {
                     text-transform: uppercase;
                 }
             }
-            .light:last-child{
+            .light:last-child {
                 color: #424242;
                 span {
                     font-weight: 600;
