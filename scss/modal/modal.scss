@@ -1080,7 +1080,7 @@ body {
                         content: url(../img/ok.svg);
                         position: absolute;
                         left: 3px;
-                        top: 3px;
+                        top: 4px;
                     }
                 }
                 .error {
@@ -1088,7 +1088,7 @@ body {
                         content: url(../img/error.svg);
                         position: absolute;
                         left: 3px;
-                        top: 3px;
+                        top: 4px;
                     }
                 }
                 .warning {
@@ -1096,7 +1096,7 @@ body {
                         content: url(../img/warning.svg);
                         position: absolute;
                         left: 3px;
-                        top: 2px;
+                        top: 4px;
                     }
                 }
                 .gps_change {
@@ -1671,7 +1671,7 @@ body {
                         top: 2px;
                     }
                 }
-                input {
+                span {
                     outline: none;
                     background: #fff;
                     border: 1px dashed #aadcfb;

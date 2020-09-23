@@ -1059,17 +1059,17 @@ body {
           content: url(../img/ok.svg);
           position: absolute;
           left: 3px;
-          top: 3px; }
+          top: 4px; }
         .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps .error::after {
           content: url(../img/error.svg);
           position: absolute;
           left: 3px;
-          top: 3px; }
+          top: 4px; }
         .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps .warning::after {
           content: url(../img/warning.svg);
           position: absolute;
           left: 3px;
-          top: 2px; }
+          top: 4px; }
         .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps .gps_change {
           position: relative;
           color: #797979;
@@ -1654,7 +1654,7 @@ body {
           position: absolute;
           left: 3px;
           top: 2px; }
-        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box input {
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box span {
           outline: none;
           background: #fff;
           border: 1px dashed #aadcfb;
