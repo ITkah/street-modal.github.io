@@ -61,6 +61,237 @@ body {
     display: block;
 }
 
+.modal_events {
+    max-width: 450px;
+    .modal_container_events {
+        .modal_events_title {
+            padding: 10px;
+            border-bottom: 1px solid #D9E5F6;
+            margin-bottom: 20px;
+            p {
+                font: 400 .87rem "PT Sans", sans-serif;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+        .modal_events_pretitle {
+            font: bold 1.2rem "PT Sans", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #0C56B5;
+        }
+    }
+    .modal_events_wraper {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        grid-gap: 20px;
+        padding: 0 10px 30px 10px;
+        .evenst_items_wraper {
+            display: flex;
+            flex-direction: column;
+            .evenst_items_box {
+                width: 100%;
+                box-sizing: border-box;
+                background: #FDFDFD;
+                border: .5px solid #5694E8;
+                border-radius: 4px;
+                margin-bottom: 15px;
+                .events_title_info {
+                    position: relative;
+                    padding: 5px 7px;
+                    p {
+                        color: #424242;
+                        font: bold .87rem "PT Sans", sans-serif;
+                        padding-right: 20px;
+                    }
+                    span {
+                        position: absolute;
+                        right: 5px;
+                        top: 5px;
+                        font: bold 1.2rem "PT Sans", sans-serif;
+                        color: #D10C16;
+                    }
+                }
+                .events_items_btn {
+                    padding: 5px;
+                    background: #D9E5F6;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    justify-content: center;
+                    cursor: pointer;
+                    height: 20px;
+                    .open_list {
+                        font: bold .8rem "PT Sans", sans-serif;
+                        color: #407ED2;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -20px;
+                            bottom: -5px;
+                            border: 8px solid transparent;
+                            border-top: 8px solid #407ED2;
+                        }
+                    }
+                    .close_list {
+                        display: none;
+                        font: bold .8rem "PT Sans", sans-serif;
+                        color: #407ED2;
+                    }
+                }
+                .active_list {
+                    .open_list {
+                        display: none;
+                    }
+                    .close_list {
+                        display: block;
+                    }
+                }
+                .events_items_list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 5px 7px;
+                    li {
+                        font: 400 .87rem "PT Sans", sans-serif;
+                        color: #424242;
+                        position: relative;
+                        padding-left: 10px;
+                        display: inline-block;
+                        margin-bottom: 5px;
+                        &::after {
+                            content: '';
+                            width: 100%;
+                            height: .5px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            display: block;
+                            background: rgba(12, 86, 181, .4);
+                        }
+                        &::before {
+                            content: '';
+                            height: 5px;
+                            width: 5px;
+                            background: #424242;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            .evenst_items_box:last-child {
+                background: #F5F8FE;
+                border: 1.5px solid #F5F8FE;
+            }
+        }
+        .evenst_about_wraper {
+            .events_stages {
+                display: inline-block;
+                padding: 2px 3px;
+                border: 2px solid #e3906b;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                font: 400 .87rem "PT Sans", sans-serif;
+                span {
+                    font-weight: bold;
+                    color: #407ED2;
+                }
+            }
+            .event_owag {
+                margin-bottom: 5px;
+                font: bold .87rem "PT Sans", sans-serif;
+                color: #D14609;
+                text-decoration: underline;
+            }
+            .event_dtp {
+                margin-bottom: 20px;
+                font: bold .87rem "PT Sans", sans-serif;
+                color: #D10C16;
+                text-decoration: underline;
+            }
+            .event_plan {
+                margin-bottom: 3px;
+                font: normal .87rem "PT Sans", sans-serif;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .event_user {
+                margin: 20px 0 25px 0;
+                p {
+                    font: normal .87rem "PT Sans", sans-serif;
+                    margin-bottom: 3px;
+                    color: #797979;
+                    span {
+                        display: block;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .event_short_about {
+                .shot_text {
+                    font: normal .95rem "PT Sans", sans-serif;
+                    color: #000;
+                    margin-bottom: 5px;
+                }
+                .short_road {
+                    font: normal .87rem "PT Sans", sans-serif;
+                    color: #0C56B5;
+                }
+                .review_id_input {
+                    position: relative;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    span {
+                        background: #f5f8fe;
+                        border: 1px dashed #aadcfb;
+                        width: 140px;
+                        padding: 3px 3px 3px 20px;
+                        font: bold .75rem "PT Sans", sans-serif;
+                        overflow: hidden;
+                        border-radius: 3px;
+                    }
+                }
+                .ok {
+                    &::after {
+                        content: url(../img/ok.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                    }
+                }
+                .error {
+                    &::after {
+                        content: url(../img/error.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                    }
+                }
+                .warning {
+                    &::after {
+                        content: url(../img/warning.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .modal_dtp {
     max-width: 680px;
     width: 680px;
@@ -348,7 +579,7 @@ body {
             display: flex;
             position: relative;
             align-items: center;
-            input {
+            span {
                 background: #f5f8fe;
                 border: 1px dashed #aadcfb;
                 width: 140px;
@@ -834,7 +1065,7 @@ body {
                     display: flex;
                     position: relative;
                     align-items: center;
-                    input {
+                    span {
                         background: #fff;
                         border: 1px dashed #aadcfb;
                         width: 100px;
